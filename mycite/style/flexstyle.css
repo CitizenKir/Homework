@@ -1,0 +1,125 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+main{
+    margin: 100px;
+}
+.block1, .block2, .block3, .block4{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: 5px 5px 5px 5px;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+}
+.pic1, .pic2, .pic3, .pic4{
+    height: 65%;
+    width: 95%;
+}
+.text1, .text2, .text3,.text4{
+    height: 30%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    color: black;
+}
+.pic1{
+    background-image: url("../images/ow.jpg");
+    background-size: cover;
+}
+.pic2{
+    background-image: url("../images/witch.jpg");
+    background-size: cover;
+}
+.pic3{
+    background-image: url("../images/metro.jpg");
+    background-size: cover;
+}
+.pic4{
+    background-image: url("../images/ds.jpg");
+    background-size: cover;
+}
+.setka {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 400px;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    margin: 35px;
+}
+.block5, .block6, .block7, .block8{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+.pic5, .pic6, .pic7, .pic8{
+    height: 60%;
+    width: 95%;
+}
+.text5, .text6, .text7,.text8{
+    height: 30%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    color: black;
+}
+.pic5{
+    background-image: url("../images/twd.jpg");
+    background-size: cover;
+}
+.pic6{
+    background-image: url("../images/bio.jpg");
+    background-size: cover;
+}
+.pic7{
+    background-image: url("../images/hotm.jpg");
+    background-size: contain;
+}
+.pic8{
+    background-image: url("../images/dmc.jpg");
+    background-size: cover;
+}
+@media screen and (max-width: 400px){
+    .container{
+        flex-flow: column;
+    }
+    .setka{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-flow: column;
+    }
+    .block5, .block6, .block7, .block8{
+        height: 400px;
+        width: 400px;
+        margin: 5px 5px 5px 5px;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+    }
+}
+@media screen and (max-width: 700px) {
+    .container {
+        flex-flow: column;
+    }
+
+    .setka {
+        grid-template-columns: 1fr;
+        grid-template-rows: 500px 500px 500px 500px;
+    }
+}

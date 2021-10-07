@@ -1,0 +1,296 @@
+html{
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: orange;
+}
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.tablebutton{
+    width: 100px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    font-size: larger;
+    color: orange;
+    transition: 0.5s;
+
+}
+.tablebutton:hover{
+    background-color: orange;
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+.photocontain{
+    height: 600px;
+    width: 30%;
+    background-color: #00BFFF;
+}
+.aboutme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+
+}
+.photo{
+    background-image: url("../../mycite/images/me.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 30%;
+    margin-right: 10px;
+}
+.infocontain{
+    height: 600px;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+
+}
+.name{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: black;
+    font-weight: bolder;
+    font-size: 35px;
+}
+.info{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.iam{
+    height: 500px;
+    width: 50%;
+    font-size: 25px;
+    overflow-x:hidden
+}
+.feedback{
+    height: 500px;
+    width: 50%;
+    font-size: 25px;
+    word-wrap:break-word;
+    overflow-x:hidden;
+}
+/*Для планшетов*/
+@media screen and (max-width: 750px){
+
+    .aboutme{
+        flex-flow: column;
+        height: 10%;
+    }
+    .photo{
+        width: 500px;
+        height: 700px;
+    }
+    .infocontain{
+        align-items: center;
+        height: 10%;
+    }
+    .name{
+        margin-top: 50px;
+        font-size: 35px;
+        width: 700px;
+        height: 50px;
+    }
+    .info{
+        flex-flow: column;
+        height: 300px;
+    }
+    .iam{
+        font-size: 16px;
+        width: 500px;
+        height: 150px
+    }
+    .feedback{
+        font-size: 16px;
+        width: 500px;
+        height: 150px;
+
+    }
+    /*Для телефонов*/
+}
+@media screen and (max-width: 400px){
+    header{
+        height: 50px;
+    }
+    .tablebutton{
+        font-size: 15px;
+    }
+    .info{
+        height: 200px;
+    }
+    .aboutme{
+        flex-flow: column;
+    }
+    .photo{
+        width: 300px;
+        height: 400px;
+    }
+    .infocontain{
+        align-items: center;
+        height: 10%;
+    }
+    .name{
+        margin-top: 50px;
+        font-size: 15px;
+        width: 300px;
+        height: 30px;
+    }
+    .info{
+        flex-flow: column;
+    }
+    .iam{
+        font-size: 10px;
+        width: 300px;
+        height: 200px
+    }
+    .feedback{
+        font-size: 10px;
+        width: 300px;
+        height: 200px;
+
+    }
+
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+main{
+    margin: 100px;
+}
+.block1, .block2, .block3, .block4{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: 5px 5px 5px 5px;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+}
+.pic1, .pic2, .pic3, .pic4{
+    height: 65%;
+    width: 95%;
+}
+.text1, .text2, .text3,.text4{
+    height: 30%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    color: orange;
+}
+.pic1{
+    background-image: url("../../mycite/images/ow.jpg");
+    background-size: cover;
+}
+.pic2{
+    background-image: url("../../mycite/images/witch.jpg");
+    background-size: cover;
+}
+.pic3{
+    background-image: url("../../mycite/images/metro.jpg");
+    background-size: cover;
+}
+.pic4{
+    background-image: url("../../mycite/images/ds.jpg");
+    background-size: cover;
+}
+.setka {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 400px;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    margin: 35px;
+}
+.block5, .block6, .block7, .block8{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+.pic5, .pic6, .pic7, .pic8{
+    height: 60%;
+    width: 95%;
+}
+.text5, .text6, .text7,.text8{
+    height: 30%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    color: orange;
+}
+.pic5{
+    background-image: url("../../mycite/images/twd.jpg");
+    background-size: cover;
+}
+.pic6{
+    background-image: url("../../mycite/images/bio.jpg");
+    background-size: cover;
+}
+.pic7{
+    background-image: url("../../mycite/images/hotm.jpg");
+    background-size: contain;
+}
+.pic8{
+    background-image: url("../../mycite/images/dmc.jpg");
+    background-size: cover;
+}
+@media screen and (max-width: 400px){
+    .container{
+        flex-flow: column;
+    }
+    .setka{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-flow: column;
+    }
+    .block5, .block6, .block7, .block8{
+        height: 400px;
+        width: 400px;
+        margin: 5px 5px 5px 5px;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+    }
+}
+@media screen and (max-width: 700px) {
+    .container {
+        flex-flow: column;
+    }
+
+    .setka {
+        grid-template-columns: 1fr;
+        grid-template-rows: 500px 500px 500px 500px;
+    }
+}
