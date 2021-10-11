@@ -1,3 +1,13 @@
+<?
+date_default_timezone_set("Europe/Moscow");
+$time = date("G");
+if (($time < "20") && ($time > "08")){
+    $style = "style/styles.css";}
+else{
+    $style = "style/night.css";
+
+}
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -5,18 +15,13 @@
     <title>Kirill's page</title>
     <link rel="stylesheet" href="style/styles.css">
     <link rel="stylesheet" href="style/flexstyle.css">
+    <link rel="stylesheet" href="style/headerstyle.css"
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body>
-<header>
-    <div class="headline">
-        <a href="table/table.html">
-            <div class="tablebutton">
-                Таблица
-            </div>
-        </a>
-    </div>
-</header>
+<?
+include 'header/header.html'
+?>
 <main>
     <div class="aboutme">
         <div class="photo"></div>

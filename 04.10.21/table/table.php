@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <title>Таблица Менделеева</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="../style/headerstyle.css">
+    <link rel="stylesheet" href="../style/styles.css">
 </head>
 <body>
+<?
+include '../header/header.html'
+?>
 <table align="center">
     <caption>Таблица Менделеева</caption>
     <tr>
