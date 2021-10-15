@@ -1,0 +1,67 @@
+html{
+    font-weight: bolder;
+}
+table, tr, td{
+    border: 5px solid black;
+    border-collapse: collapse;
+}
+tr, td{
+    width: 200px;
+    height: 100px;
+    position: relative;
+}
+caption{
+    font-size: 30px;
+}
+p.shortname{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 35px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    width: 50%;
+}
+p.name{
+    margin-top: 5px;
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 15px;
+    width: 50%;
+}
+p.atom{
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+    height: 10px;
+    position: absolute;
+    top: 0px;
+}
+p.mass{
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+    height: 10px;
+    position: absolute;
+    top: 15px;
+}
+.color1{
+    background-color: #FF34B3;
+}
+.color2{
+    background-color: yellow;
+}
+.color3{
+    background-color: #00BFFF;
+}
+td:hover{
+    position: relative;
+    opacity: 1;
+    transform: scale(1.1);
+    filter: hue-rotate(60deg)
+}
+a:link{
+    color: black;
+}
+a:visited{
+    color: black;
+}
