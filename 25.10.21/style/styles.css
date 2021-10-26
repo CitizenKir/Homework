@@ -1,0 +1,143 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+.photocontain{
+    height: 600px;
+    width: 30%;
+    background-color: #00BFFF;
+}
+.aboutme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+
+}
+.photo{
+    background-image: url("../images/me.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 30%;
+    margin-right: 10px;
+}
+.infocontain{
+    height: 600px;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+
+}
+.name{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: black;
+    font-weight: bolder;
+    font-size: 35px;
+}
+.info{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.iam{
+    height: 500px;
+    width: 50%;
+    font-size: 25px;
+    overflow-x:hidden
+}
+.feedback{
+    height: 500px;
+    width: 50%;
+    font-size: 25px;
+    word-wrap:break-word;
+    overflow-x:hidden;
+}
+ /*Для планшетов*/
+@media screen and (max-width: 750px){
+
+    .aboutme{
+        flex-flow: column;
+        height: 10%;
+    }
+    .photo{
+        width: 500px;
+        height: 700px;
+    }
+    .infocontain{
+        align-items: center;
+        height: 10%;
+    }
+    .name{
+        margin-top: 50px;
+        font-size: 35px;
+        width: 700px;
+        height: 50px;
+    }
+    .info{
+        flex-flow: column;
+        height: 300px;
+    }
+    .iam{
+        font-size: 16px;
+        width: 500px;
+        height: 150px
+    }
+    .feedback{
+        font-size: 16px;
+        width: 500px;
+        height: 150px;
+
+    }
+/*Для телефонов*/
+}
+@media screen and (max-width: 400px){
+    header{
+        height: 50px;
+    }
+    .tablebutton{
+        font-size: 15px;
+    }
+    .info{
+        height: 200px;
+    }
+    .aboutme{
+        flex-flow: column;
+    }
+    .photo{
+        width: 300px;
+        height: 400px;
+    }
+    .infocontain{
+        align-items: center;
+        height: 10%;
+    }
+    .name{
+        margin-top: 50px;
+        font-size: 15px;
+        width: 300px;
+        height: 30px;
+    }
+    .info{
+        flex-flow: column;
+    }
+    .iam{
+        font-size: 10px;
+        width: 300px;
+        height: 200px
+    }
+    .feedback{
+        font-size: 10px;
+        width: 300px;
+        height: 200px;
+
+    }
+
+}
